@@ -1,3 +1,7 @@
+/*
+ *  FRAME PER INSERIRE INSERIRE IL NOME
+ */
+
 import javax.swing.*;
 import java.awt.*;
 
