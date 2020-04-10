@@ -1,19 +1,12 @@
 public class Quiz //di cultura generale
 {
-    private String nome;
     private String domande[];
     private String risposteA[], risposteB[], risposteC[], risposteD[];
     private String risposteGiuste[];
 
     public Quiz()
     {
-        setNome("Giocatore");
         setDomande();
-    }
-
-    public void setNome(String nome)
-    {
-        this.nome = nome;
     }
 
     public void setDomande() {
@@ -31,7 +24,7 @@ public class Quiz //di cultura generale
             caricaRisposteGiuste();
     }
 
-    public void caricaDomande() {       /
+    public void caricaDomande() {
         domande[0] = "Qual'è la capitale degli Stati Uniti d'America?"; // Risposta: Washington
         domande[1] = "Quando avvenne il Sacco di Roma? "; // Risposta: 410 d.C.
         domande[2] = "Nel 1901, chi effettuò la prima trasmissione radio?"; // Risposta: Guglielmo Marconi
@@ -40,7 +33,7 @@ public class Quiz //di cultura generale
         domande[5] = "Qual è il simbolo del Magnesio?"; // Risposta: Mg
         domande[6] = "Qual è il nome del servitore di Robinson Crusoe?"; // Risposta: Venerdì
         domande[7] = "Quando venne fondato la Scuola del Libro di Urbino?"; // Risposta: 1861
-        domande[8] = "In un giorno di 24 ore (compresa la ventiquattresima), quante volte si sovrappongono la lancetta delle ore e dei minuti in un orologio?"; // Risposta: 22
+        domande[8] = "<html>In un giorno di 24 ore (compresa la ventiquattresima),<br>quante volte si sovrappongono la lancetta delle ore<br>e dei minuti in un orologio?</html>"; // Risposta: 22
         domande[9] = "Quale dei seguenti animali appartiene alla famiglia dei Bovidi?"; // Risposta: Muflone
     }
 
@@ -115,6 +108,26 @@ public class Quiz //di cultura generale
             return true;
         else
             return false;
+    }
+
+    public String visualizzaA(int index)
+    {
+        return risposteA[index];
+    }
+
+    public String visualizzaB(int index)
+    {
+        return risposteB[index];
+    }
+
+    public String visualizzaC(int index)
+    {
+        return risposteC[index];
+    }
+
+    public String visualizzaD(int index)
+    {
+        return risposteD[index];
     }
 
     public String visualizzaDomanda(int index)
